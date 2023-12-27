@@ -1,0 +1,117 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #6B8E23;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    background: #556B2F;
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+
+main {
+    padding: 1em;
+    background: #fff;
+}
+#new-component-name {
+    margin-left: 5px;
+}
+
+#component-add {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+#component-add input[type="text"] {
+    flex-grow: 1;
+    padding: 0.5em;
+    margin-right: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#component-add button {
+    padding: 0 0.5em; 
+    min-width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    border: none;
+    background-color: #9ACD32;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 2px 2px rgba(0,0,0,0.2);
+}
+
+#component-list ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#component-list li {
+    background: #eee;
+    margin-bottom: 5px;
+    padding: 0.5em;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#component-list button {
+    padding: 0 0.5em;
+    min-width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    border: none;
+    background-color: #9ACD32;
+    color: white;
+    cursor: pointer;
+}
+
+#component-list input[type="number"] {
+    width: 50px;
+    padding: 0.5em;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+/* Стили для планшетов (min-width: 768px) */
+@media (min-width: 768px) {
+    #component-add input[type="text"],
+    #component-add button {
+        margin-bottom: 0;
+    }
+}
+
+/* Стили для десктопов (min-width: 1280px) */
+@media (min-width: 1280px) {
+    header {
+        padding: 1em 2em;
+    }
+
+    main {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 2em;
+    }
+
+    #component-add {
+        max-width: 600px; 
+        margin: 0 auto;
+    }
+
+    #component-list li {
+        padding: 0.5em 1em;
+    }
+
+    #component-list button {
+        margin: 0 5px;
+    }
+}
